@@ -8,6 +8,41 @@
   <title>Intro Js</title>
 </head>
 
+<style>
+  *{
+    transition: all .3s ease-out;
+  }
+  body {
+    background-color: #1d1d1d;
+    color: bisque;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  main { 
+    padding: 2rem;
+  } 
+  section {
+    padding: 2rem;
+    border-radius: 2rem;
+    border: .0625rem solid #ffffff3c;
+    margin-bottom: 2rem;
+  }
+
+  button {
+    background-color: #EA580C;
+    color: white;
+    border: 0.125rem solid #9a3a12;
+    border-radius: 2rem;
+    height: 3rem;
+    padding: 0 1.5rem;
+    font-size: 1rem;
+  }
+  button:hover {
+    background-color: #9a3a12;
+  }
+  hr {
+    border-color:#ffffff3c;
+  }
+</style>
 <body>
   <header>
     <h1> Introdução ao JavaScript</h1>
@@ -87,8 +122,8 @@
           <h3>Abordagem Externa</h3>
           <p> Nessa abordagem, o JavaScript fica em um arquivo separado, geralmente com a extensão .js, conectado ao HTML por meio de uma tag script configurado com o atributo src. Exemplo: </p>
 
-          <button type="button"></button>
-          <span id="message"></span>
+          <button type="button" id="segundoBotao" onclick="exibirMensagem()">Clique e veja a mensagem</button>
+          <span id="mensagem"></span>
         </section>
   </main>
 </body>
