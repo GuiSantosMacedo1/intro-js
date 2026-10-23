@@ -47,7 +47,7 @@ console.log(vazio);
 console.log(typeof vazio); // object (isso é um bug do JavaScript, mas é assim que funciona)
 console.log('-------------------------------')
 // 7. Symbol: representa um valor único e imutável, usado principalmente como identificador de propriedades de objetos.
-const simbolo = Symbol('descricao');
-
-console.log(simbolo);
-console.log(typeof simbolo); // symbol
+const id = Symbol('id');
+const id2 = Symbol('id');
+console.log(id === id2); // false, pois cada Symbol é único
+console.log(typeof id); // symbol
